@@ -1,0 +1,29 @@
+/* Sylvester Brown - Assignment 3.3 */
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: Arial, sans-serif;
+}
+
+/* Headings Style */
+h1, h2, h3, h4 {
+    background-color: #004080; /* dark blue background */
+    color: #ffffff; /* white text */
+    border: 1px solid #D6A800; /* gold border */
+    padding: 10px;
+}
+
+/* Anchor Style */
+a {
+    color: #007acc; /* link color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D6A800; /* hover gold */
+}
+
+a:visited {
+    color: #800080; /* visited purple */
+}
