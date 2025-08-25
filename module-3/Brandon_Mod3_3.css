@@ -1,0 +1,65 @@
+/* Sylvester Brandon - Assignment 3.3 */
+
+/* General Container */
+#container {
+    width: 100%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+}
+
+/* Side-by-Side Divs */
+.left-div, .right-div {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Last Div */
+.bottom-div {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+}
+
+/* Headings */
+h3 {
+    font-weight: 500;
+}
+
+/* Lists */
+ol, ul {
+    font-weight: 300;
+    padding: 10px;
+    list-style-position: inside; /* numbers/bullets inside border */
+}
+
+/* Ordered List (Books) */
+.left-div h3, .left-div ol {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Unordered List (Learned) */
+.right-div h3, .right-div ul {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style-type: upper-roman;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #004080;
+}
+
+a:hover {
+    text-decoration: underline;
+}
