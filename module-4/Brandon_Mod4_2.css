@@ -1,0 +1,56 @@
+/* Sylvester Brandon - Assignment 4.2 */
+
+/* Container */
+#container {
+    width: 100%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    color: rgba(0, 64, 128, 0.9); /* optional rgba styling */
+}
+
+/* Image Gallery Grid */
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10%;
+    gap: 20px;
+}
+
+/* Titles for each gallery item */
+h3 {
+    text-align: center;
+    color: rgba(200, 0, 0, 0.9); /* optional rgba styling */
+}
+
+/* Figure + Captions */
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(0, 128, 0, 0.9); /* optional rgba styling */
+}
+
+/* Bottom link back to portal */
+.bottom-div {
+    width: 100%;
+    margin-top: 5%;
+    float: right;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #004080;
+}
+
+a:hover {
+    text-decoration: underline;
+}
