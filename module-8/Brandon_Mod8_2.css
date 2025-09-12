@@ -1,0 +1,28 @@
+/* Movies Table */
+#movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#movies th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+#movies td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Footer Update */
+footer {
+    position: fixed;
+    left: 0;
+}
+
+/* Container spacing */
+.container {
+    margin: 2% 5% 100px 5%;
+}
