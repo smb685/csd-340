@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Assignment 9.3
+    CSD 340 Web Development with HTML and CSS
+    Author: Sylvester Brandon
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        // Declare variables for the blank spaces
+        var wordOne = "adventure";
+        var wordTwo = "sunset";
+        var wordThree = "mystery";
+        var wordFour = "friendship";
+    </script>
+</head>
+
+<body>
+    <h1>Assignment 9.3: JavaScript - Part 1</h1>
+
+    <p>Once upon a time, four travelers set out on an <span id="word1">_________</span>. 
+       The road was long, and the journey tested their courage at every turn.</p>
+
+    <p>As they reached the mountain ridge, they watched the <span id="word2">_________</span> 
+       paint the sky in shades of red and gold. It was a sight they would never forget.</p>
+
+    <p>Each challenge they faced carried a <span id="word3">_________</span> 
+       that made them stronger. But above all, it was their <span id="word4">_________</span> 
+       that kept them moving forward together.</p>
+
+    <!-- Buttons to reveal each word -->
+    <p>
+        <button type="button" onclick="document.getElementById('word1').innerHTML = wordOne">Reveal Word 1</button>
+        <button type="button" onclick="document.getElementById('word2').innerHTML = wordTwo">Reveal Word 2</button>
+        <button type="button" onclick="document.getElementById('word3').innerHTML = wordThree">Reveal Word 3</button>
+        <button type="button" onclick="document.getElementById('word4').innerHTML = wordFour">Reveal Word 4</button>
+    </p>
+</body>
+</html>
