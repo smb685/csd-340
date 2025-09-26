@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSD 340 Web Development with HTML and CSS</title>
+  <script>
+    function changeImage(newFile, elementId) {
+      var img = document.getElementById(elementId);
+      img.src = newFile;
+    }
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      color: darkblue;
+    }
+    img {
+      width: 300px;
+      height: 200px;
+      margin: 10px;
+      cursor: pointer;
+      border: 2px solid #333;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Assignment 10.3: JavaScript - Part 2</h1>
+  <p>Click an image to swap it!</p>
+
+  <!-- First image -->
+  <img id="walk_02" src="walk_02.jpg" alt="Walk 02"
+       onclick="changeImage('walk_01.jpg', 'walk_02')">
+
+  <!-- Second image -->
+  <img id="walk_01" src="walk_01.jpg" alt="Walk 01"
+       onclick="changeImage('walk_02.jpg', 'walk_01')">
+
+</body>
+</html>
