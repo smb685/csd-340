@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSD 340 Web Development with HTML and CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 30px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    input[type="text"] {
+      width: 250px;
+      padding: 8px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 8px 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: white;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    #listDisplay {
+      margin-top: 20px;
+      text-align: left;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Assignment 11.2: JavaScript - Part 3</h1>
+  <p>Enter a task into the box below, then use the buttons to add, delete, or display your To Do list.</p>
+
+  <!-- Textbox -->
+  <input type="text" id="taskInput" placeholder="Enter a task">
+
+  <!-- Buttons -->
+  <br>
+  <button onclick="addTask()">Add</button>
+  <button onclick="deleteTask()">Delete Last Entry</button>
+  <button onclick="displayTasks()">Display</button>
+
+  <!-- Where tasks will display -->
+  <div id="listDisplay"></div>
+
+  <script>
+    // Array to store tasks
+    let tasks = [];
+
+    // Function to add task
+    function addTask() {
+      let task = document.getElementById("taskInput").value.trim();
+      if (task === "") {
+        alert("Please enter a task before adding.");
+        return;
+      }
+      tasks.push(task);
+      alert("Task Added: \"" + task + "\" at position " + tasks.length);
+      document.getElementById("taskInput").value = ""; // clear input
+    }
+
+    // Function to delete last task
+    function deleteTask() {
+      if (tasks.length === 0) {
+        alert("No tasks to delete!");
+        return;
+      }
+      let removedTask = tasks.pop();
+      alert("Task Deleted: \"" + removedTask + "\"");
+    }
+
+    // Function to display all tasks
+    function displayTasks() {
+      if (tasks.length === 0) {
+        document.getElementById("listDisplay").innerHTML = "<p>No tasks in the list.</p>";
+        return;
+      }
+      let output = "<h3>To Do List:</h3><ol>";
+      for (let i = 0; i < tasks.length; i++) {
+        output += "<li>" + tasks[i] + "</li>";
+      }
+      output += "</ol>";
+      document.getElementById("listDisplay").innerHTML = output;
+    }
+  </script>
+
+</body>
+</html>
