@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSD 340 Web Development with HTML and CSS</title>
+  <script>
+    // Array of top 10 books
+    const books = [
+      "The Great Gatsby",
+      "To Kill a Mockingbird",
+      "1984",
+      "Pride and Prejudice",
+      "The Catcher in the Rye",
+      "Moby Dick",
+      "The Hobbit",
+      "War and Peace",
+      "Jane Eyre",
+      "The Lord of the Rings"
+    ];
+
+    // Display books from top to bottom
+    function displayTopToBottom() {
+      let output = "<ol>";
+      for (let i = 0; i < books.length; i++) {
+        output += "<li>" + books[i] + "</li>";
+      }
+      output += "</ol>";
+      document.getElementById("bookList").innerHTML = output;
+    }
+
+    // Display books from bottom to top
+    function displayBottomToTop() {
+      let output = "<ol>";
+      for (let i = books.length - 1; i >= 0; i--) {
+        output += "<li>" + books[i] + "</li>";
+      }
+      output += "</ol>";
+      document.getElementById("bookList").innerHTML = output;
+    }
+  </script>
+</head>
+<body>
+  <h1>Assignment 12.2: JavaScript - Part 4</h1>
+  <p>Click a button to view your book list:</p>
+
+  <button onclick="displayTopToBottom()">Top to Bottom</button>
+  <button onclick="displayBottomToTop()">Bottom to Top</button>
+
+  <hr>
+  <div id="bookList"></div>
+</body>
+</html>
